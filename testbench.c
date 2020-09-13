@@ -8,11 +8,9 @@
     else \
        printf("FAILED\n");\
 }
-FILE *fptr;
-fptr = fopen("program.txt", "w");
 void TC1_1(void)
 {
-   fprintf(fptr, "%s", sentence);
+   printf("Test case 1\t");
    int ret=wiper(1,50);
    int exp=1;
    EXPECT_EQ(exp,ret);
