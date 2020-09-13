@@ -19,7 +19,7 @@ void TC1_1(void)
 
 void TC1_2(void)
 {
-   printf("Test  case 2\t");
+   printf("Test case 2\t");
    int ret=wiper(0,50);
    int exp=0;
    EXPECT_EQ(exp,ret);
