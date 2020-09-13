@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "wprpgm.h"
-#include "wprpgm.c"
+//#include "wprpgm.c"
 #define EXPECT_EQ(a, b) {\
     if (a==b)\
         printf("PASSED\n");\
     else \
        printf("FAILED\n");\
 }
-FILE *fptr;
-fptr = fopen("program.txt", "w");
 void TC1_1(void)
 {
-   fprintf(fptr, "%s", sentence);
+   printf("Test case 1\t");
    int ret=wiper(1,50);
    int exp=1;
    EXPECT_EQ(exp,ret);
@@ -21,7 +19,7 @@ void TC1_1(void)
 
 void TC1_2(void)
 {
-   printf("Test case 2\t");
+   printf("Test  case 2\t");
    int ret=wiper(0,50);
    int exp=0;
    EXPECT_EQ(exp,ret);
