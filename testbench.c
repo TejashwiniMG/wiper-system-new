@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "wprpgm.h"
-//#include "wprpgm.c"
+#include "wprpgm.c"
 #define EXPECT_EQ(a, b) {\
     if (a==b)\
         printf("PASSED\n");\
